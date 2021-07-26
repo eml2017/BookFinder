@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPSC 314 Final Project Video</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+
+        .list {
+            text-align: left;
+            background-color: rgb(61,47,46);
+            color: white;
+            padding: 20px;
+            border-radius: 3%;
+        }
+
+        body {
+            background-color: rgb(255,252,243);
+        }
+
+        .demo-button {
+            background-color: rgb(247,228,195);
+            border: none;
+            color: rgb(61,47,46);
+            text-align: center;
+            font-size: 15px;
+            border-radius: 5%;
+        }
+
+        .fr {
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CPSC 314 Final Project Presentation</h1>
+        <h2>Book Finder</h2>
+        <h2>Elizabeth Larson</h2>
+            <h2 id="date">
+                <script>
+                    document.getElementById("date").innerHTML = new Date().toDateString();
+                </script>
+            </h2>
+            
+    </div>
+    <div class="list">
+        <h2 class="container">Project Overview/Introduction</h2>
+        <p>
+            <ul>
+                <li>COVID-19 Pandemic</li>
+                <ul>
+                    <li>Lack of access to books at home</li>
+                    <li>Remote learning and closed public librares</li>
+                </ul>
+                <li>This Website</li>
+                <ul>
+                    <li>Compilation of books that deal with serious/sensitive subject matter (divorce, mental health, bullying, etc.)</li>
+                </ul>
+                <li>Goals</li>
+                <ol>
+                    <li>Promote reading aloud to young children</li>
+                    <li>Introduce children to these topics in a fun way OR help them understand and relate to what's happening around them</li>
+                </ol>
+            </ul>
+        </p>
+    </div>
+    <div class="fr">
+        <h1>Functional Requirements (1-7 front end, 8-13 back end):</h1>
+
+        <h2>Browse All Books</h2>
+            <button class="demo-button"><a href="home-page.php" target="_blank">Demo</a></button>
+            <p>FR-6: Users can view all books</p>
+            <p>FR-8: Add books to the Books table (in the BookFinder database)</p>
+
+        <h2>More Info</h2>
+            <button class="demo-button"><a href="home-page.php" target="_blank">Demo</a></button>
+            <p>FR-5: Users can view more information about a book</p>
+
+        <h2>Browse by Topic</h2>
+            <button class="demo-button"><a href="browse-topics.php" target="_blank">Demo</a></button>
+            <p>FR-2: Users can browse by topic</p>
+            <p>FR-10: Selecting books that match the chosen topic</p>
+
+        <h2>Browse by Title/Author</h2>
+            <button class="demo-button"><a href="home-page.php" target="_blank">Demo</a></button>
+            <p>FR-1: Users can search by title or author</p>
+            <p>FR-11: Selecting books that match a search keyword</p>
+
+        <h2>Add/Remove Reading List Books</h2>
+            <button class="demo-button"><a href="reading-list.php" target="_blank">Demo</a></button>
+            <p>FR-3: Users can add a book to the Reading List</p>
+            <p>FR-4: Users can remove a book from the Reading List</p>
+            <p>FR-7: Users can view Reading List</p>
+            <p>FR-9: Marking books as “in the Reading List”</p>
+            <p>FR-12: Update the Books table by removing “deleted” Reading List books</p>
+            <p>FR-13: Update Books table by inserting “added” Reading List books</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+/*
+    Final Project ~ CPSC 314-01 (Web Development)
+	Elizabeth Larson
+    Last Modified: 12/06/2020
+    Sources:
+        Color Scheme: https://www.color-hex.com/color-palette/100377
+
+	Styling for the browse-topics.php page.
+*/
+
+/* ----------------- Color Scheme ----------------- */
+:root {
+    --hue-darkest-brown: rgb(61,47,46);
+    --hue-dark-brown: rgb(153,118,116);
+    --hue-brown: rgb(200,165,146);
+    --hue-orange: rgb(240,170,121);
+    --hue-light-brown: rgb(247,228,195);
+    --hue-yellow: rgb(255,242,197);
+    --hue-off-white: rgb(255,252,243);
+}
+
+body {
+    background-color: var(--hue-off-white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------------- Header ----------------- */
+#header {
+    background-color: var(--hue-orange);
+    display: flex;
+    flex-direction: row;
+}
+
+.header-button {
+    background-color: var(--hue-light-brown);
+    border: none;
+    color: var(--hue-dark-brown);
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5%;
+    margin: 10px;
+}
+
+#header-text {
+    color: var(--hue-darkest-brown);
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ----------------- Title Text ----------------- */
+#title-text {
+    color: var(--hue-darkest-brown);
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+    margin: 20px;
+}
+
+#title-subtext {
+    color: var(--hue-darkest-brown);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+}
+
+/* ----------------- Topics ----------------- */
+#topics {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.topic-button {
+    background-color: var(--hue-light-brown);
+    border: none;
+    color: var(--hue-dark-brown);
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5%;
+    margin: 10px;
+}
